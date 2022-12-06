@@ -1,0 +1,30 @@
+import random
+lst = ["rock", "paper", "scissor"]
+r = random.randint(0,2)
+print("0 => rock")
+print("1 => paper")
+print("2 => scissor")
+while True:
+      ch = int(input("enter your choice"))
+      print(ch)
+      if ch == 0 and r == 0:
+            print("tie")
+      elif ch == 1 and r == 0:
+            print("you win")
+      elif ch == 2 and r == 0:
+            print("computer win")
+      elif ch == 1 and r == 1:
+            print("tie")
+      elif ch == 0 and r == 1:
+            print("computer win")
+      elif ch == 2 and r == 2:
+            print("user win")
+      elif ch == 1 and r == 2:
+            print("computer win")
+      elif ch == 2 and r == 2:
+            print("tie")
+      elif ch == 99:
+            break
+      else:
+            print("wrong input")
+print("thank you for playing game with me.")
